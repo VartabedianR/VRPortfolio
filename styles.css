@@ -504,10 +504,14 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-  width: 60%;
+  width: 65%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
+  width: 50%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
   width: 20%;
 }
 
@@ -584,8 +588,26 @@ span {
   z-index: 1;
 }
 
+.card_three {
+  position: relative;
+  height: 405px;
+  width: 365px;
+  padding: 20px 35px;
+  border: 2px solid var(--main-color);
+  background-image: url(./images/Projets/Projet3img1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin: 50px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1;
+}
+
 .card_one::after,
-.card_two::after {
+.card_two::after,
+.card_three::after {
   content: "";
   position: absolute;
   left: 0;
@@ -598,7 +620,8 @@ span {
 }
 
 .card_one i,
-.card_two i {
+.card_two i,
+.card_three i {
   font-size: 50px;
   display: block;
   text-align: center;
@@ -623,7 +646,8 @@ h5 {
 }
 
 .card_one .button,
-.card_two .button {
+.card_two .button,
+.card_three .button {
   background-color: var(--main-color);
   color: white;
   text-decoration: none;
@@ -635,7 +659,8 @@ h5 {
 }
 
 .card_one .button:hover,
-.card_two .button:hover {
+.card_two .button:hover,
+.card_three .button:hover {
   background-color: transparent;
   border: 2px solid var(--bg-color);
   cursor: pointer;
